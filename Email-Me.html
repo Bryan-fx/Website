@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in touch with Bryan through email." />
+    <title>Email Me — Bryan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .contact-page { max-width: 1240px; min-height: calc(100vh - 190px); margin: auto; padding: 70px 40px 100px; }
+      .contact-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .7fr); align-items: center; gap: 80px; }
+      .contact-copy { max-width: 680px; }
+      .contact-copy h1 { margin-bottom: 30px; }
+      .contact-copy .hero-description { margin-bottom: 38px; }
+      .email-card { padding: 38px; background: var(--lime); transform: rotate(2deg); }
+      .email-card-label { margin: 0 0 35px; color: #43503b; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+      .email-card-address { display: block; margin-bottom: 35px; font-family: var(--display); font-size: clamp(24px, 3vw, 36px); font-weight: 600; letter-spacing: -.07em; overflow-wrap: anywhere; }
+      .email-card-note { margin: 0; color: #43503b; font-size: 13px; line-height: 1.6; }
+      .back-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 40px; color: var(--muted); font-size: 13px; font-weight: 700; }
+      .back-link:hover { color: var(--ink); }
+      @media (max-width: 760px) {
+        .contact-page { min-height: auto; padding: 55px 24px 80px; }
+        .contact-layout { display: block; }
+        .contact-copy h1 { font-size: clamp(52px, 15vw, 75px); }
+        .email-card { margin-top: 55px; padding: 28px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Bryan's home">
+        <span class="brand-mark">B</span>
+        <span>bryan fx</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html#about">About me</a>
+        <a href="index.html#interests">Interests</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-small button-dark" href="mailto:schoolcraft@bryanfx.codes">Email me <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main class="contact-page" id="contact">
+      <div class="contact-layout">
+        <section class="contact-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Let's connect</p>
+          <h1>Drop me a <em>line.</em></h1>
+          <p class="hero-description">
+            Whether you have a question, an idea, or just want to say hello,
+            I'd be happy to hear from you.
+          </p>
+          <a class="button button-primary" href="mailto:schoolcraft@bryanfx.codes">Send an email <span>↗</span></a>
+          <a class="back-link" href="index.html">← Back to my home page</a>
+        </section>
+
+        <aside class="email-card">
+          <p class="email-card-label">My inbox is open</p>
+          <a class="email-card-address" href="mailto:schoolcraft@bryanfx.codes">schoolcraft@bryanfx.codes</a>
+          <p class="email-card-note">I usually reply as soon as I can. Looking forward to hearing from you.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="index.html" aria-label="Bryan's home">
+          <span class="brand-mark">B</span>
+          <span>bryan fx</span>
+        </a>
+        <p class="footer-note">Thanks for stopping by.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#about">About me</a>
+        <a href="index.html#interests">Interests</a>
+        <a href="mailto:schoolcraft@bryanfx.codes">Email me</a>
+      </div>
+      <p class="copyright">© 2027 Bryan Schoolcraft</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
